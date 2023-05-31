@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LauncherCzech", "LauncherCz.vcxproj", "{88782FA9-1DBB-4C68-A404-7CB09E9E7A48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88782FA9-1DBB-4C68-A404-7CB09E9E7A48}.Release|Win32.ActiveCfg = Release|Win32
+		{88782FA9-1DBB-4C68-A404-7CB09E9E7A48}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5A097D9-65A5-405B-A978-6B6AB2727178}
+	EndGlobalSection
+EndGlobal
