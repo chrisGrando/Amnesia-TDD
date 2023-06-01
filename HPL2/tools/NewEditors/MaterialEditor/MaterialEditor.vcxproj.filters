@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{07f98f14-4932-4dc5-808f-f1891e53a62b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\EditModes">
+      <UniqueIdentifier>{f1bc088e-fa3a-4b14-b4f5-16711efd4cf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\EditModes\Types">
+      <UniqueIdentifier>{d50b878c-b681-48c5-be0c-2921bfae1e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Windows">
+      <UniqueIdentifier>{36d31467-ec16-4cd3-8b2f-8fa7c48262cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Windows\EditPanes">
+      <UniqueIdentifier>{e9689bb5-0acb-4921-8d9b-b13d1cd1dde1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Windows\EditModeWindows">
+      <UniqueIdentifier>{121b4a7a-8cd5-4ac2-9db0-bad13c600145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Windows\Utils">
+      <UniqueIdentifier>{5ebfd3eb-3761-4f5e-969d-a874a26af5a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Utils">
+      <UniqueIdentifier>{ce0fcdaf-01aa-400f-a1d8-f96c3c4fe71e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Modules">
+      <UniqueIdentifier>{0aa31329-81a1-48b7-845f-0e444b4f44a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\World">
+      <UniqueIdentifier>{36b45e3a-cc54-4477-b7d5-6ff7e23ff286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\World\Objects">
+      <UniqueIdentifier>{524968ae-fe3d-44ad-9e79-90514c84fb71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\World\Objects\Types">
+      <UniqueIdentifier>{9763e82b-b0c0-46c7-916d-728859447068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Actions">
+      <UniqueIdentifier>{38979a91-575c-4639-9edb-2f6b9338ddc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Actions\Types">
+      <UniqueIdentifier>{d49c278b-a933-44c0-9249-240bd9e52149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{46ef8e5c-6908-4df9-b84e-474c6642c243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\World">
+      <UniqueIdentifier>{6df22f5c-deb8-4ad1-9332-c8d8153e69ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\World\Types">
+      <UniqueIdentifier>{5fe937d8-a7e7-4331-8f7b-0c40627df1a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\EdActionMisc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdAxisAlignedPlane.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdGridActions.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdIndex.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdInput.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Editor.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EditorTypes.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdMenu.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdModule.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdResource.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdUIPicker.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdUserClassDefinition.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdVar.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\StdAfx.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdEditMode.h">
+      <Filter>Source Files\Common\EditModes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdCamera.h">
+      <Filter>Source Files\Common\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdViewport.h">
+      <Filter>Source Files\Common\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdWindowOptions.h">
+      <Filter>Source Files\Common\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdPopUpSoundBrowser.h">
+      <Filter>Source Files\Common\Windows\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdPopUpTextureBrowser.h">
+      <Filter>Source Files\Common\Windows\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdGenericMenu.h">
+      <Filter>Source Files\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdGrid.h">
+      <Filter>Source Files\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdThumbnailBuilder.h">
+      <Filter>Source Files\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GenericBG.h">
+      <Filter>Source Files\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DirectoryHandler.h">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdActionHandler.h">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdConfigHandler.h">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdEditModeHandler.h">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdInputHandler.h">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdWindowHandler.h">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdWorld.h">
+      <Filter>Source Files\Common\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdAction.h">
+      <Filter>Source Files\Common\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdObjectActions.h">
+      <Filter>Source Files\Common\Actions\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdMatEditorMenu.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EdWindowMaterialEditor.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialEditor.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\HPLMaterial.h">
+      <Filter>Source Files\Main\World\Types</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\EdActionMisc.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdAxisAlignedPlane.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdGridActions.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdIndex.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdInput.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Editor.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EditorMain.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EditorTypes.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdMenu.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdModule.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdResource.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdUIPicker.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdUserClassDefinition.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdVar.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\StdAfx.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdEditMode.cpp">
+      <Filter>Source Files\Common\EditModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdCamera.cpp">
+      <Filter>Source Files\Common\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdViewport.cpp">
+      <Filter>Source Files\Common\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdWindowOptions.cpp">
+      <Filter>Source Files\Common\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdPopUpSoundBrowser.cpp">
+      <Filter>Source Files\Common\Windows\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdPopUpTextureBrowser.cpp">
+      <Filter>Source Files\Common\Windows\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdGenericMenu.cpp">
+      <Filter>Source Files\Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdGrid.cpp">
+      <Filter>Source Files\Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdThumbnailBuilder.cpp">
+      <Filter>Source Files\Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GenericBG.cpp">
+      <Filter>Source Files\Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DirectoryHandler.cpp">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdActionHandler.cpp">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdConfigHandler.cpp">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdEditModeHandler.cpp">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdInputHandler.cpp">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdWindowHandler.cpp">
+      <Filter>Source Files\Common\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdWorld.cpp">
+      <Filter>Source Files\Common\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdAction.cpp">
+      <Filter>Source Files\Common\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdObjectActions.cpp">
+      <Filter>Source Files\Common\Actions\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdMatEditorMenu.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EdWindowMaterialEditor.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialEditor.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\HPLMaterial.cpp">
+      <Filter>Source Files\Main\World\Types</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

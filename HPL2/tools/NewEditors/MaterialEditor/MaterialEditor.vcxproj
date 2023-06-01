@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13C96A71-88FF-4153-BD50-CCBDB12C6EDC}</ProjectGuid>
+    <RootNamespace>MaterialEditor</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../redist\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../redist\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>../Common/StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>HPL2_Debug_2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)MaterialEditor.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\lib; ..\..\..\dependencies\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)MaterialEditor.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;MEMORY_MANAGER_ACTIVE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>HPL2_2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)MaterialEditor.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\lib; ..\..\..\dependencies\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\EdActionMisc.h" />
+    <ClInclude Include="..\Common\EdAxisAlignedPlane.h" />
+    <ClInclude Include="..\Common\EdGridActions.h" />
+    <ClInclude Include="..\Common\EdIndex.h" />
+    <ClInclude Include="..\Common\EdInput.h" />
+    <ClInclude Include="..\Common\Editor.h" />
+    <ClInclude Include="..\Common\EditorTypes.h" />
+    <ClInclude Include="..\Common\EdMenu.h" />
+    <ClInclude Include="..\Common\EdModule.h" />
+    <ClInclude Include="..\Common\EdResource.h" />
+    <ClInclude Include="..\Common\EdUIPicker.h" />
+    <ClInclude Include="..\Common\EdUserClassDefinition.h" />
+    <ClInclude Include="..\Common\EdVar.h" />
+    <ClInclude Include="..\Common\StdAfx.h" />
+    <ClInclude Include="..\Common\EdEditMode.h" />
+    <ClInclude Include="..\Common\EdCamera.h" />
+    <ClInclude Include="..\Common\EdViewport.h" />
+    <ClInclude Include="..\Common\EdWindowOptions.h" />
+    <ClInclude Include="..\Common\EdPopUpSoundBrowser.h" />
+    <ClInclude Include="..\Common\EdPopUpTextureBrowser.h" />
+    <ClInclude Include="..\Common\EdGenericMenu.h" />
+    <ClInclude Include="..\Common\EdGrid.h" />
+    <ClInclude Include="..\Common\EdThumbnailBuilder.h" />
+    <ClInclude Include="..\Common\GenericBG.h" />
+    <ClInclude Include="..\Common\DirectoryHandler.h" />
+    <ClInclude Include="..\Common\EdActionHandler.h" />
+    <ClInclude Include="..\Common\EdConfigHandler.h" />
+    <ClInclude Include="..\Common\EdEditModeHandler.h" />
+    <ClInclude Include="..\Common\EdInputHandler.h" />
+    <ClInclude Include="..\Common\EdWindowHandler.h" />
+    <ClInclude Include="..\Common\EdWorld.h" />
+    <ClInclude Include="..\Common\EdAction.h" />
+    <ClInclude Include="..\Common\EdObjectActions.h" />
+    <ClInclude Include="..\Common\EdMatEditorMenu.h" />
+    <ClInclude Include="..\Common\EdWindowMaterialEditor.h" />
+    <ClInclude Include="MaterialEditor.h" />
+    <ClInclude Include="..\Common\HPLMaterial.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\EdActionMisc.cpp" />
+    <ClCompile Include="..\Common\EdAxisAlignedPlane.cpp" />
+    <ClCompile Include="..\Common\EdGridActions.cpp" />
+    <ClCompile Include="..\Common\EdIndex.cpp" />
+    <ClCompile Include="..\Common\EdInput.cpp" />
+    <ClCompile Include="..\Common\Editor.cpp" />
+    <ClCompile Include="..\Common\EditorMain.cpp" />
+    <ClCompile Include="..\Common\EditorTypes.cpp" />
+    <ClCompile Include="..\Common\EdMenu.cpp" />
+    <ClCompile Include="..\Common\EdModule.cpp" />
+    <ClCompile Include="..\Common\EdResource.cpp" />
+    <ClCompile Include="..\Common\EdUIPicker.cpp" />
+    <ClCompile Include="..\Common\EdUserClassDefinition.cpp" />
+    <ClCompile Include="..\Common\EdVar.cpp" />
+    <ClCompile Include="..\Common\StdAfx.cpp" />
+    <ClCompile Include="..\Common\EdEditMode.cpp" />
+    <ClCompile Include="..\Common\EdCamera.cpp" />
+    <ClCompile Include="..\Common\EdViewport.cpp" />
+    <ClCompile Include="..\Common\EdWindowOptions.cpp" />
+    <ClCompile Include="..\Common\EdPopUpSoundBrowser.cpp" />
+    <ClCompile Include="..\Common\EdPopUpTextureBrowser.cpp" />
+    <ClCompile Include="..\Common\EdGenericMenu.cpp" />
+    <ClCompile Include="..\Common\EdGrid.cpp" />
+    <ClCompile Include="..\Common\EdThumbnailBuilder.cpp" />
+    <ClCompile Include="..\Common\GenericBG.cpp" />
+    <ClCompile Include="..\Common\DirectoryHandler.cpp" />
+    <ClCompile Include="..\Common\EdActionHandler.cpp" />
+    <ClCompile Include="..\Common\EdConfigHandler.cpp" />
+    <ClCompile Include="..\Common\EdEditModeHandler.cpp" />
+    <ClCompile Include="..\Common\EdInputHandler.cpp" />
+    <ClCompile Include="..\Common\EdWindowHandler.cpp" />
+    <ClCompile Include="..\Common\EdWorld.cpp" />
+    <ClCompile Include="..\Common\EdAction.cpp" />
+    <ClCompile Include="..\Common\EdObjectActions.cpp" />
+    <ClCompile Include="..\Common\EdMatEditorMenu.cpp" />
+    <ClCompile Include="..\Common\EdWindowMaterialEditor.cpp" />
+    <ClCompile Include="MaterialEditor.cpp" />
+    <ClCompile Include="..\Common\HPLMaterial.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

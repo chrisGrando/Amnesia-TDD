@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A83CE5B7-6A4B-4640-B600-3D31A7D8F739}</ProjectGuid>
+    <RootNamespace>ModelEditor</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../redist\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../redist\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>../Common/StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>HPL2_Debug_2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ModelEditor.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\lib; ..\..\..\dependencies\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)ModelEditor.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>HPL2_2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ModelEditor.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\lib; ..\..\..\dependencies\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\EdClipPlane.cpp" />
+    <ClCompile Include="..\Common\EdClipPlaneActions.cpp" />
+    <ClCompile Include="..\LevelEditor\EdGroup.cpp" />
+    <ClCompile Include="..\Common\EdHelper.cpp" />
+    <ClCompile Include="EdWindowModelEditorOptions.cpp" />
+    <ClCompile Include="..\Common\HPLMaterial.cpp" />
+    <ClCompile Include="..\LevelEditor\LevelEditorStaticObjectCombo.cpp" />
+    <ClCompile Include="ModelEditor.cpp" />
+    <ClCompile Include="ModelEditorMenu.cpp" />
+    <ClCompile Include="..\Common\EdAxisAlignedPlane.cpp" />
+    <ClCompile Include="..\Common\EdIndex.cpp" />
+    <ClCompile Include="..\Common\EdInput.cpp" />
+    <ClCompile Include="..\Common\Editor.cpp" />
+    <ClCompile Include="..\Common\EditorMain.cpp" />
+    <ClCompile Include="..\Common\EditorTypes.cpp" />
+    <ClCompile Include="..\Common\EdMatEditorMenu.cpp" />
+    <ClCompile Include="..\Common\EdMenu.cpp" />
+    <ClCompile Include="..\Common\EdModule.cpp" />
+    <ClCompile Include="..\Common\EdResource.cpp" />
+    <ClCompile Include="..\Common\EdUIPicker.cpp" />
+    <ClCompile Include="..\Common\EdUserClassDefinition.cpp" />
+    <ClCompile Include="..\Common\EdVar.cpp" />
+    <ClCompile Include="..\Common\EdWindowMaterialEditor.cpp" />
+    <ClCompile Include="..\Common\StdAfx.cpp" />
+    <ClCompile Include="..\Common\EdEditMode.cpp" />
+    <ClCompile Include="..\Common\EdEditModeScnObjCreator.cpp" />
+    <ClCompile Include="..\Common\EdEditModeBillboards.cpp" />
+    <ClCompile Include="..\Common\EdEditModeLights.cpp" />
+    <ClCompile Include="..\Common\EdEditModeParticleSystems.cpp" />
+    <ClCompile Include="..\Common\EdEditModeSelect.cpp" />
+    <ClCompile Include="..\Common\EdEditModeSelectTool.cpp" />
+    <ClCompile Include="..\Common\EdEditModeSelectToolRotate.cpp" />
+    <ClCompile Include="..\Common\EdEditModeSelectToolScale.cpp" />
+    <ClCompile Include="..\Common\EdEditModeSelectToolTranslate.cpp" />
+    <ClCompile Include="..\Common\EdEditModeSounds.cpp" />
+    <ClCompile Include="..\Common\EdCamera.cpp" />
+    <ClCompile Include="..\Common\EdPaneLowerToolbar.cpp" />
+    <ClCompile Include="..\Common\EdViewMenu.cpp" />
+    <ClCompile Include="..\Common\EdViewport.cpp" />
+    <ClCompile Include="..\Common\EdWindowEditModeSidebar.cpp" />
+    <ClCompile Include="..\Common\EdWindowViewport.cpp" />
+    <ClCompile Include="..\Common\EdEditPane.cpp" />
+    <ClCompile Include="..\Common\EdEditPaneBillboard.cpp" />
+    <ClCompile Include="..\Common\EdEditPaneLight.cpp" />
+    <ClCompile Include="..\Common\EdEditPaneParticleSystem.cpp" />
+    <ClCompile Include="..\Common\EdEditPaneSound.cpp" />
+    <ClCompile Include="..\Common\EdMultiScnObjEditPane.cpp" />
+    <ClCompile Include="..\Common\EdScnObjEditPane.cpp" />
+    <ClCompile Include="..\Common\EdPopUpSoundBrowser.cpp" />
+    <ClCompile Include="..\Common\EdPopUpTextureBrowser.cpp" />
+    <ClCompile Include="..\Common\EdWindowFind.cpp" />
+    <ClCompile Include="..\Common\EdScnObjCreatorPane.cpp" />
+    <ClCompile Include="..\Common\EdWindowBillboards.cpp" />
+    <ClCompile Include="..\Common\EdWindowLights.cpp" />
+    <ClCompile Include="..\Common\EdWindowObjectBrowser.cpp" />
+    <ClCompile Include="..\Common\EdWindowParticleSystems.cpp" />
+    <ClCompile Include="..\Common\EdWindowSelect.cpp" />
+    <ClCompile Include="..\Common\EdWindowSounds.cpp" />
+    <ClCompile Include="..\Common\BoxCreator.cpp" />
+    <ClCompile Include="..\Common\EdGenericMenu.cpp" />
+    <ClCompile Include="..\Common\EdGrid.cpp" />
+    <ClCompile Include="..\Common\EdObjectPicker.cpp" />
+    <ClCompile Include="..\Common\EdScnEditorMenu.cpp" />
+    <ClCompile Include="..\Common\EdSurfacePicker.cpp" />
+    <ClCompile Include="..\Common\EdThumbnailBuilder.cpp" />
+    <ClCompile Include="..\Common\GenericBG.cpp" />
+    <ClCompile Include="..\Common\ShapeCreator.cpp" />
+    <ClCompile Include="..\Common\SphereCreator.cpp" />
+    <ClCompile Include="..\Common\DirectoryHandler.cpp" />
+    <ClCompile Include="..\Common\EdActionHandler.cpp" />
+    <ClCompile Include="..\Common\EdConfigHandler.cpp" />
+    <ClCompile Include="..\Common\EdEditModeHandler.cpp" />
+    <ClCompile Include="..\Common\EdInputHandler.cpp" />
+    <ClCompile Include="..\Common\EdWindowHandler.cpp" />
+    <ClCompile Include="..\Common\EdScnWorld.cpp" />
+    <ClCompile Include="..\Common\EdWorld.cpp" />
+    <ClCompile Include="..\Common\EdEngineObject.cpp" />
+    <ClCompile Include="..\Common\EdEntityLoader.cpp" />
+    <ClCompile Include="..\Common\EdObjCompound.cpp" />
+    <ClCompile Include="..\Common\EdObjectIcon.cpp" />
+    <ClCompile Include="..\Common\EdScnObject.cpp" />
+    <ClCompile Include="..\Common\EdSelection.cpp" />
+    <ClCompile Include="..\Common\EdObjBillboard.cpp" />
+    <ClCompile Include="..\Common\EdObjLight.cpp" />
+    <ClCompile Include="..\Common\EdObjLightBox.cpp" />
+    <ClCompile Include="..\Common\EdObjLightPoint.cpp" />
+    <ClCompile Include="..\Common\EdObjLightSpot.cpp" />
+    <ClCompile Include="..\Common\EdObjParticleSystem.cpp" />
+    <ClCompile Include="..\Common\EdObjSound.cpp" />
+    <ClCompile Include="..\Common\EdAction.cpp" />
+    <ClCompile Include="..\Common\EdActionMisc.cpp" />
+    <ClCompile Include="..\Common\EdGridActions.cpp" />
+    <ClCompile Include="..\Common\EdObjectActions.cpp" />
+    <ClCompile Include="..\Common\EdScnObjectActions.cpp" />
+    <ClCompile Include="..\Common\EdSelectActions.cpp" />
+    <ClCompile Include="EdObjBody.cpp" />
+    <ClCompile Include="EdObjBone.cpp" />
+    <ClCompile Include="EdObjJoint.cpp" />
+    <ClCompile Include="EdObjJointBall.cpp" />
+    <ClCompile Include="EdObjJointHinge.cpp" />
+    <ClCompile Include="EdObjJointScrew.cpp" />
+    <ClCompile Include="EdObjJointSlider.cpp" />
+    <ClCompile Include="EdObjShape.cpp" />
+    <ClCompile Include="EdObjShapeBox.cpp" />
+    <ClCompile Include="EdObjShapeCapsule.cpp" />
+    <ClCompile Include="EdObjShapeCylinder.cpp" />
+    <ClCompile Include="EdObjShapeManipulators.cpp" />
+    <ClCompile Include="EdObjShapeSphere.cpp" />
+    <ClCompile Include="EdObjSubMesh.cpp" />
+    <ClCompile Include="HPLEntity.cpp" />
+    <ClCompile Include="..\LevelEditor\HPLMap.cpp" />
+    <ClCompile Include="EdEditModeJoints.cpp" />
+    <ClCompile Include="EdEditModeShapes.cpp" />
+    <ClCompile Include="EdEditPaneBody.cpp" />
+    <ClCompile Include="EdEditPaneBone.cpp" />
+    <ClCompile Include="..\Common\EdEditPaneCompound.cpp" />
+    <ClCompile Include="EdEditPaneJoint.cpp" />
+    <ClCompile Include="EdEditPaneShape.cpp" />
+    <ClCompile Include="EdEditPaneShapes.cpp" />
+    <ClCompile Include="EdEditPaneSubMesh.cpp" />
+    <ClCompile Include="EdLowerToolbarModel.cpp" />
+    <ClCompile Include="EdWindowAnimations.cpp" />
+    <ClCompile Include="EdWindowEntityClass.cpp" />
+    <ClCompile Include="EdWindowJoints.cpp" />
+    <ClCompile Include="EdWindowOutline.cpp" />
+    <ClCompile Include="EdWindowPhysicsTest.cpp" />
+    <ClCompile Include="EdWindowShapes.cpp" />
+    <ClCompile Include="EdHplEntityActions.cpp" />
+    <ClCompile Include="EdObjBodyActions.cpp" />
+    <ClCompile Include="..\Common\EdScnWorldActions.cpp" />
+    <ClCompile Include="..\LevelEditor\HPLMapActions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\EdClipPlane.h" />
+    <ClInclude Include="..\Common\EdClipPlaneActions.h" />
+    <ClInclude Include="..\LevelEditor\EdGroup.h" />
+    <ClInclude Include="..\Common\EdHelper.h" />
+    <ClInclude Include="EdWindowModelEditorOptions.h" />
+    <ClInclude Include="..\Common\HPLMaterial.h" />
+    <ClInclude Include="..\LevelEditor\LevelEditorStaticObjectCombo.h" />
+    <ClInclude Include="ModelEditor.h" />
+    <ClInclude Include="ModelEditorMenu.h" />
+    <ClInclude Include="..\Common\EdAxisAlignedPlane.h" />
+    <ClInclude Include="..\Common\EdIndex.h" />
+    <ClInclude Include="..\Common\EdInput.h" />
+    <ClInclude Include="..\Common\Editor.h" />
+    <ClInclude Include="..\Common\EditorTypes.h" />
+    <ClInclude Include="..\Common\EdMatEditorMenu.h" />
+    <ClInclude Include="..\Common\EdMenu.h" />
+    <ClInclude Include="..\Common\EdModule.h" />
+    <ClInclude Include="..\Common\EdResource.h" />
+    <ClInclude Include="..\Common\EdUIPicker.h" />
+    <ClInclude Include="..\Common\EdUserClassDefinition.h" />
+    <ClInclude Include="..\Common\EdVar.h" />
+    <ClInclude Include="..\Common\EdWindowMaterialEditor.h" />
+    <ClInclude Include="..\Common\StdAfx.h" />
+    <ClInclude Include="..\Common\EdEditMode.h" />
+    <ClInclude Include="..\Common\EdEditModeScnObjCreator.h" />
+    <ClInclude Include="..\Common\EdEditModeBillboards.h" />
+    <ClInclude Include="..\Common\EdEditModeLights.h" />
+    <ClInclude Include="..\Common\EdEditModeParticleSystems.h" />
+    <ClInclude Include="..\Common\EdEditModeSelect.h" />
+    <ClInclude Include="..\Common\EdEditModeSelectTool.h" />
+    <ClInclude Include="..\Common\EdEditModeSelectToolRotate.h" />
+    <ClInclude Include="..\Common\EdEditModeSelectToolScale.h" />
+    <ClInclude Include="..\Common\EdEditModeSelectToolTranslate.h" />
+    <ClInclude Include="..\Common\EdEditModeSounds.h" />
+    <ClInclude Include="..\Common\EdCamera.h" />
+    <ClInclude Include="..\Common\EdPaneLowerToolbar.h" />
+    <ClInclude Include="..\Common\EdViewMenu.h" />
+    <ClInclude Include="..\Common\EdViewport.h" />
+    <ClInclude Include="..\Common\EdWindowEditModeSidebar.h" />
+    <ClInclude Include="..\Common\EdWindowViewport.h" />
+    <ClInclude Include="..\Common\EdEditPane.h" />
+    <ClInclude Include="..\Common\EdEditPaneBillboard.h" />
+    <ClInclude Include="..\Common\EdEditPaneLight.h" />
+    <ClInclude Include="..\Common\EdEditPaneParticleSystem.h" />
+    <ClInclude Include="..\Common\EdEditPaneSound.h" />
+    <ClInclude Include="..\Common\EdMultiScnObjEditPane.h" />
+    <ClInclude Include="..\Common\EdScnObjEditPane.h" />
+    <ClInclude Include="..\Common\EdPopUpSoundBrowser.h" />
+    <ClInclude Include="..\Common\EdPopUpTextureBrowser.h" />
+    <ClInclude Include="..\Common\EdWindowFind.h" />
+    <ClInclude Include="..\Common\EdScnObjCreatorPane.h" />
+    <ClInclude Include="..\Common\EdWindowBillboards.h" />
+    <ClInclude Include="..\Common\EdWindowLights.h" />
+    <ClInclude Include="..\Common\EdWindowObjectBrowser.h" />
+    <ClInclude Include="..\Common\EdWindowParticleSystems.h" />
+    <ClInclude Include="..\Common\EdWindowSelect.h" />
+    <ClInclude Include="..\Common\EdWindowSounds.h" />
+    <ClInclude Include="..\Common\BoxCreator.h" />
+    <ClInclude Include="..\Common\EdGenericMenu.h" />
+    <ClInclude Include="..\Common\EdGrid.h" />
+    <ClInclude Include="..\Common\EdObjectPicker.h" />
+    <ClInclude Include="..\Common\EdScnEditorMenu.h" />
+    <ClInclude Include="..\Common\EdSurfacePicker.h" />
+    <ClInclude Include="..\Common\EdThumbnailBuilder.h" />
+    <ClInclude Include="..\Common\GenericBG.h" />
+    <ClInclude Include="..\Common\ShapeCreator.h" />
+    <ClInclude Include="..\Common\SphereCreator.h" />
+    <ClInclude Include="..\Common\DirectoryHandler.h" />
+    <ClInclude Include="..\Common\EdActionHandler.h" />
+    <ClInclude Include="..\Common\EdConfigHandler.h" />
+    <ClInclude Include="..\Common\EdEditModeHandler.h" />
+    <ClInclude Include="..\Common\EdInputHandler.h" />
+    <ClInclude Include="..\Common\EdWindowHandler.h" />
+    <ClInclude Include="..\Common\EdScnWorld.h" />
+    <ClInclude Include="..\Common\EdWorld.h" />
+    <ClInclude Include="..\Common\EdEngineObject.h" />
+    <ClInclude Include="..\Common\EdEntityLoader.h" />
+    <ClInclude Include="..\Common\EdObjCompound.h" />
+    <ClInclude Include="..\Common\EdObjectIcon.h" />
+    <ClInclude Include="..\Common\EdScnObject.h" />
+    <ClInclude Include="..\Common\EdSelection.h" />
+    <ClInclude Include="..\Common\EdObjBillboard.h" />
+    <ClInclude Include="..\Common\EdObjLight.h" />
+    <ClInclude Include="..\Common\EdObjLightBox.h" />
+    <ClInclude Include="..\Common\EdObjLightPoint.h" />
+    <ClInclude Include="..\Common\EdObjLightSpot.h" />
+    <ClInclude Include="..\Common\EdObjParticleSystem.h" />
+    <ClInclude Include="..\Common\EdObjSound.h" />
+    <ClInclude Include="..\Common\EdAction.h" />
+    <ClInclude Include="..\Common\EdActionMisc.h" />
+    <ClInclude Include="..\Common\EdGridActions.h" />
+    <ClInclude Include="..\Common\EdObjectActions.h" />
+    <ClInclude Include="..\Common\EdScnObjectActions.h" />
+    <ClInclude Include="..\Common\EdSelectActions.h" />
+    <ClInclude Include="EdObjBody.h" />
+    <ClInclude Include="EdObjBone.h" />
+    <ClInclude Include="EdObjJoint.h" />
+    <ClInclude Include="EdObjJointBall.h" />
+    <ClInclude Include="EdObjJointHinge.h" />
+    <ClInclude Include="EdObjJointScrew.h" />
+    <ClInclude Include="EdObjJointSlider.h" />
+    <ClInclude Include="EdObjShape.h" />
+    <ClInclude Include="EdObjShapeBox.h" />
+    <ClInclude Include="EdObjShapeCapsule.h" />
+    <ClInclude Include="EdObjShapeCylinder.h" />
+    <ClInclude Include="EdObjShapeManipulators.h" />
+    <ClInclude Include="EdObjShapeSphere.h" />
+    <ClInclude Include="EdObjSubMesh.h" />
+    <ClInclude Include="HPLEntity.h" />
+    <ClInclude Include="..\LevelEditor\HPLMap.h" />
+    <ClInclude Include="EdEditModeJoints.h" />
+    <ClInclude Include="EdEditModeShapes.h" />
+    <ClInclude Include="EdEditPaneBody.h" />
+    <ClInclude Include="EdEditPaneBone.h" />
+    <ClInclude Include="..\Common\EdEditPaneCompound.h" />
+    <ClInclude Include="EdEditPaneJoint.h" />
+    <ClInclude Include="EdEditPaneShape.h" />
+    <ClInclude Include="EdEditPaneShapes.h" />
+    <ClInclude Include="EdEditPaneSubMesh.h" />
+    <ClInclude Include="EdLowerToolbarModel.h" />
+    <ClInclude Include="EdWindowAnimations.h" />
+    <ClInclude Include="EdWindowEntityClass.h" />
+    <ClInclude Include="EdWindowJoints.h" />
+    <ClInclude Include="EdWindowOutline.h" />
+    <ClInclude Include="EdWindowPhysicsTest.h" />
+    <ClInclude Include="EdWindowShapes.h" />
+    <ClInclude Include="EdHplEntityActions.h" />
+    <ClInclude Include="EdObjBodyActions.h" />
+    <ClInclude Include="..\Common\EdScnWorldActions.h" />
+    <ClInclude Include="..\LevelEditor\HPLMapActions.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
